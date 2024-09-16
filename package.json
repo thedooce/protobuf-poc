@@ -1,5 +1,17 @@
 {
+  "name": "my-node-typescript-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc && npm run copy-protos",
+    "copy-protos": "cp -R src/proto dist/proto",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev src/index.ts"
+  },
   "dependencies": {
     "protobufjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "ts-node-dev": "^1.0.0"
   }
 }
