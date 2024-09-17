@@ -1,6 +1,7 @@
 import * as protobuf from 'protobufjs';
 import * as path from 'path';
 
+
 async function main() {
   const root = await protobuf.load(path.join(__dirname, 'proto', 'person.proto'));
   const Person = root.lookupType('Person');
