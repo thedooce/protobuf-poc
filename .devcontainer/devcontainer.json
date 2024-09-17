@@ -14,6 +14,8 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	,"postCreateCommand": "npm install"
+	//The one below is only needed if you need protoc for protobuf installed into the container. It might not be needed for our purposes.
+	//Downloads protoc, unzips it, and installs it into /usr/local/bin. Then it removes the zip file and installs the npm packages.
 	//"postCreateCommand": "wget https://github.com/protocolbuffers/protobuf/releases/download/v24.4/protoc-24.4-linux-x86_64.zip && sudo unzip protoc-24.4-linux-x86_64.zip -d /usr/local && sudo rm protoc-24.4-linux-x86_64.zip && npm install"
 
 
